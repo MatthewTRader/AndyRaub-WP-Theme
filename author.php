@@ -43,7 +43,7 @@
 				<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', '' ), __( '1 Comment', '' ), __( '% Comments', '' )); ?></span>
 				<!-- /post details -->
 
-				<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+				<?php EncoreCoach_excerpt('EncoreCoach_index'); // Build your custom callback length in functions.php ?>
 
 				<br class="clear">
 
