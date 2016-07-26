@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AndyRaub WordPress Theme\n"
+"Project-Id-Version: EncoreCoach WordPress Theme\n"
 "POT-Creation-Date: 2013-12-5 10:50+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
@@ -117,7 +117,7 @@ msgid "View Article"
 msgstr "Bekijk Artikel"
 
 #: ../functions.php:438 ../functions.php:439
-msgid "AndyRaub Custom Post"
+msgid "EncoreCoach Custom Post"
 msgstr "Persoonlijk Bericht"
 
 #: ../functions.php:440
@@ -125,7 +125,7 @@ msgid "Add New"
 msgstr "Voeg een nieuw toe"
 
 #: ../functions.php:441
-msgid "Add New AndyRaub Custom Post"
+msgid "Add New EncoreCoach Custom Post"
 msgstr "Voeg een nieuw persoonlijk bericht toe"
 
 #: ../functions.php:442
@@ -133,27 +133,27 @@ msgid "Edit"
 msgstr "Bewerken"
 
 #: ../functions.php:443
-msgid "Edit AndyRaub Custom Post"
+msgid "Edit EncoreCoach Custom Post"
 msgstr "Bewerk het persoonlijk bericht"
 
 #: ../functions.php:444
-msgid "New AndyRaub Custom Post"
+msgid "New EncoreCoach Custom Post"
 msgstr "Nieuw persoonlijk bericht"
 
 #: ../functions.php:445 ../functions.php:446
-msgid "View AndyRaub Custom Post"
+msgid "View EncoreCoach Custom Post"
 msgstr "Bekijk berichten"
 
 #: ../functions.php:447
-msgid "Search AndyRaub Custom Post"
+msgid "Search EncoreCoach Custom Post"
 msgstr "Zoeken in berichten"
 
 #: ../functions.php:448
-msgid "No AndyRaub Custom Posts found"
+msgid "No EncoreCoach Custom Posts found"
 msgstr "Geen Bericht gevonden"
 
 #: ../functions.php:449
-msgid "No AndyRaub Custom Posts found in Trash"
+msgid "No EncoreCoach Custom Posts found in Trash"
 msgstr "Geen Bericht gevonden in de prullenbak"
 
 #: ../index.php:6

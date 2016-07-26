@@ -1,9 +1,4 @@
 <?php
-/*
- *  Author: Todd Motto | @toddmotto
- *  URL: .com | @
- *  Custom functions, support, custom post types and more.
- */
 
 /*------------------------------------*\
 	External Modules/Files
@@ -62,7 +57,7 @@ if (function_exists('add_theme_support'))
 	Functions
 \*------------------------------------*/
 
-// AndyRaub navigation
+// EncoreCoach navigation
 function _nav()
 {
 	wp_nav_menu(
@@ -87,7 +82,7 @@ function _nav()
 	);
 }
 
-// Load AndyRaub scripts (header.php)
+// Load EncoreCoach scripts (header.php)
 function _header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
@@ -103,7 +98,7 @@ function _header_scripts()
     }
 }
 
-// Load AndyRaub conditional scripts
+// Load EncoreCoach conditional scripts
 function _conditional_scripts()
 {
     if (is_page('pagenamehere')) {
@@ -112,7 +107,7 @@ function _conditional_scripts()
     }
 }
 
-// Load AndyRaub styles
+// Load EncoreCoach styles
 function _styles()
 {
 
@@ -120,7 +115,7 @@ function _styles()
     wp_enqueue_style(''); // Enqueue it!
 }
 
-// Register AndyRaub Navigation
+// Register EncoreCoach Navigation
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
@@ -342,8 +337,8 @@ add_action('init', '_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_print_scripts', '_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', '_styles'); // Add Theme Stylesheet
-add_action('init', 'register_html5_menu'); // Add AndyRaub Menu
-add_action('init', 'create_post_type_html5'); // Add our AndyRaub Custom Post Type
+add_action('init', 'register_html5_menu'); // Add EncoreCoach Menu
+add_action('init', 'create_post_type_html5'); // Add our EncoreCoach Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -401,18 +396,18 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('AndyRaub Custom Post', ''), // Rename these to suit
-            'singular_name' => __('AndyRaub Custom Post', ''),
+            'name' => __('EncoreCoach Custom Post', ''), // Rename these to suit
+            'singular_name' => __('EncoreCoach Custom Post', ''),
             'add_new' => __('Add New', ''),
-            'add_new_item' => __('Add New AndyRaub Custom Post', ''),
+            'add_new_item' => __('Add New EncoreCoach Custom Post', ''),
             'edit' => __('Edit', ''),
-            'edit_item' => __('Edit AndyRaub Custom Post', ''),
-            'new_item' => __('New AndyRaub Custom Post', ''),
-            'view' => __('View AndyRaub Custom Post', ''),
-            'view_item' => __('View AndyRaub Custom Post', ''),
-            'search_items' => __('Search AndyRaub Custom Post', ''),
-            'not_found' => __('No AndyRaub Custom Posts found', ''),
-            'not_found_in_trash' => __('No AndyRaub Custom Posts found in Trash', '')
+            'edit_item' => __('Edit EncoreCoach Custom Post', ''),
+            'new_item' => __('New EncoreCoach Custom Post', ''),
+            'view' => __('View EncoreCoach Custom Post', ''),
+            'view_item' => __('View EncoreCoach Custom Post', ''),
+            'search_items' => __('Search EncoreCoach Custom Post', ''),
+            'not_found' => __('No EncoreCoach Custom Posts found', ''),
+            'not_found_in_trash' => __('No EncoreCoach Custom Posts found in Trash', '')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -422,7 +417,7 @@ function create_post_type_html5()
             'editor',
             'excerpt',
             'thumbnail'
-        ), // Go to Dashboard Custom AndyRaub post for supports
+        ), // Go to Dashboard Custom EncoreCoach post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
             'post_tag',

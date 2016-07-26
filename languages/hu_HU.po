@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AndyRaub WordPress Theme\n"
+"Project-Id-Version: EncoreCoach WordPress Theme\n"
 "POT-Creation-Date: 2013-09-18 00:26+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sallay Arnold <arnold@sallay.info>\n"
@@ -122,44 +122,44 @@ msgid "(Edit)"
 msgstr "(Szerkesztés)"
 
 #: ../functions.php:411 ../functions.php:412
-msgid "AndyRaub Custom Post"
-msgstr "AndyRaub Egyedi Tartalom"
+msgid "EncoreCoach Custom Post"
+msgstr "EncoreCoach Egyedi Tartalom"
 
 #: ../functions.php:413
 msgid "Add New"
 msgstr "Új hozzáadása"
 
 #: ../functions.php:414
-msgid "Add New AndyRaub Custom Post"
-msgstr "Új egyedi AndyRaub tartalom hozzáadása"
+msgid "Add New EncoreCoach Custom Post"
+msgstr "Új egyedi EncoreCoach tartalom hozzáadása"
 
 #: ../functions.php:415
 msgid "Edit"
 msgstr "Szerkesztés"
 
 #: ../functions.php:416
-msgid "Edit AndyRaub Custom Post"
-msgstr "AndyRaub egyedi tartalom szerkesztése"
+msgid "Edit EncoreCoach Custom Post"
+msgstr "EncoreCoach egyedi tartalom szerkesztése"
 
 #: ../functions.php:417
-msgid "New AndyRaub Custom Post"
-msgstr "Új AndyRaub egyedi tartalom"
+msgid "New EncoreCoach Custom Post"
+msgstr "Új EncoreCoach egyedi tartalom"
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View AndyRaub Custom Post"
-msgstr "AndyRaub egyedi tartalom megtekintése"
+msgid "View EncoreCoach Custom Post"
+msgstr "EncoreCoach egyedi tartalom megtekintése"
 
 #: ../functions.php:420
-msgid "Search AndyRaub Custom Post"
-msgstr "AndyRaub egyedi tartalomak keresése"
+msgid "Search EncoreCoach Custom Post"
+msgstr "EncoreCoach egyedi tartalomak keresése"
 
 #: ../functions.php:421
-msgid "No AndyRaub Custom Posts found"
-msgstr "Nincs AndyRaub egyedi tartalom"
+msgid "No EncoreCoach Custom Posts found"
+msgstr "Nincs EncoreCoach egyedi tartalom"
 
 #: ../functions.php:422
-msgid "No AndyRaub Custom Posts found in Trash"
-msgstr "Nincs AndyRaub egyedi tartalom a kukában"
+msgid "No EncoreCoach Custom Posts found in Trash"
+msgstr "Nincs EncoreCoach egyedi tartalom a kukában"
 
 #: ../index.php:6
 msgid "Latest Posts"

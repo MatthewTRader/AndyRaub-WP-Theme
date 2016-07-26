@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AndyRaub WordPress Theme\n"
+"Project-Id-Version: EncoreCoach WordPress Theme\n"
 "POT-Creation-Date: 2012-10-18 00:53+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Fabián Núñez <fanuneza@gmail.com>\n"
@@ -116,45 +116,45 @@ msgid "View Article"
 msgstr "Ver artículo"
 
 #: ../functions.php:438 ../functions.php:439
-msgid "AndyRaub Custom Post"
-msgstr "Entradas personalizadas de AndyRaub"
+msgid "EncoreCoach Custom Post"
+msgstr "Entradas personalizadas de EncoreCoach"
 
 #: ../functions.php:440
 msgid "Add New"
 msgstr "Añadir nuevo"
 
 #: ../functions.php:441
-msgid "Add New AndyRaub Custom Post"
-msgstr "Añadir entrada personalizada de AndyRaub"
+msgid "Add New EncoreCoach Custom Post"
+msgstr "Añadir entrada personalizada de EncoreCoach"
 
 #: ../functions.php:442
 msgid "Edit"
 msgstr "Editar"
 
 #: ../functions.php:443
-msgid "Edit AndyRaub Custom Post"
-msgstr "Editar entrada personalizada de AndyRaub"
+msgid "Edit EncoreCoach Custom Post"
+msgstr "Editar entrada personalizada de EncoreCoach"
 
 #: ../functions.php:444
-msgid "New AndyRaub Custom Post"
-msgstr "Nueva entrada personalizada de AndyRaub"
+msgid "New EncoreCoach Custom Post"
+msgstr "Nueva entrada personalizada de EncoreCoach"
 
 #: ../functions.php:445 ../functions.php:446
-msgid "View AndyRaub Custom Post"
-msgstr "Ver entrada personalizada de AndyRaub"
+msgid "View EncoreCoach Custom Post"
+msgstr "Ver entrada personalizada de EncoreCoach"
 
 #: ../functions.php:447
-msgid "Search AndyRaub Custom Post"
-msgstr "Buscar entrada personalizada de AndyRaub"
+msgid "Search EncoreCoach Custom Post"
+msgstr "Buscar entrada personalizada de EncoreCoach"
 
 #: ../functions.php:448
-msgid "No AndyRaub Custom Posts found"
-msgstr "No se han encontrado entradas personalizadas de AndyRaub"
+msgid "No EncoreCoach Custom Posts found"
+msgstr "No se han encontrado entradas personalizadas de EncoreCoach"
 
 #: ../functions.php:449
-msgid "No AndyRaub Custom Posts found in Trash"
+msgid "No EncoreCoach Custom Posts found in Trash"
 msgstr ""
-"No se han encontrado entradas personalizadas de AndyRaub en la papelera"
+"No se han encontrado entradas personalizadas de EncoreCoach en la papelera"
 
 #: ../index.php:6
 msgid "Latest Posts"

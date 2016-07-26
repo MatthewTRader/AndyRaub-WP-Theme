@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AndyRaub WordPress Theme\n"
+"Project-Id-Version: EncoreCoach WordPress Theme\n"
 "POT-Creation-Date: 2013-08-31 17:10+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Mattia Accornero <hello@macco.me>\n"
@@ -122,7 +122,7 @@ msgid "(Edit)"
 msgstr "(Modifica)"
 
 #: ../functions.php:411 ../functions.php:412
-msgid "AndyRaub Custom Post"
+msgid "EncoreCoach Custom Post"
 msgstr "Articolo personalizzato"
 
 #: ../functions.php:413
@@ -130,7 +130,7 @@ msgid "Add New"
 msgstr "Aggiungi nuovo"
 
 #: ../functions.php:414
-msgid "Add New AndyRaub Custom Post"
+msgid "Add New EncoreCoach Custom Post"
 msgstr "Aggiungi un nuovo articolo personalizzato"
 
 #: ../functions.php:415
@@ -138,27 +138,27 @@ msgid "Edit"
 msgstr "Modifica"
 
 #: ../functions.php:416
-msgid "Edit AndyRaub Custom Post"
+msgid "Edit EncoreCoach Custom Post"
 msgstr "Modifica articolo personalizzato"
 
 #: ../functions.php:417
-msgid "New AndyRaub Custom Post"
+msgid "New EncoreCoach Custom Post"
 msgstr "Nuovo articolo personalizzato"
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View AndyRaub Custom Post"
+msgid "View EncoreCoach Custom Post"
 msgstr "Mostra articolo personalizzato"
 
 #: ../functions.php:420
-msgid "Search AndyRaub Custom Post"
+msgid "Search EncoreCoach Custom Post"
 msgstr "Cerca articolo personalizzato"
 
 #: ../functions.php:421
-msgid "No AndyRaub Custom Posts found"
+msgid "No EncoreCoach Custom Posts found"
 msgstr "Nessun articolo personalizzato trovato"
 
 #: ../functions.php:422
-msgid "No AndyRaub Custom Posts found in Trash"
+msgid "No EncoreCoach Custom Posts found in Trash"
 msgstr "Nessun articolo personalizzato trovato nel cestino"
 
 #: ../index.php:6

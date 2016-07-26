@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AndyRaub WordPress Theme\n"
+"Project-Id-Version: EncoreCoach WordPress Theme\n"
 "POT-Creation-Date: 2013-09-18 00:26+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jürgen Rabe | www.egado.de <rabe@egado.de>\n"
@@ -119,7 +119,7 @@ msgid "(Edit)"
 msgstr ""
 
 #: ../functions.php:411 ../functions.php:412
-msgid "AndyRaub Custom Post"
+msgid "EncoreCoach Custom Post"
 msgstr ""
 
 #: ../functions.php:413
@@ -127,7 +127,7 @@ msgid "Add New"
 msgstr ""
 
 #: ../functions.php:414
-msgid "Add New AndyRaub Custom Post"
+msgid "Add New EncoreCoach Custom Post"
 msgstr ""
 
 #: ../functions.php:415
@@ -135,27 +135,27 @@ msgid "Edit"
 msgstr ""
 
 #: ../functions.php:416
-msgid "Edit AndyRaub Custom Post"
+msgid "Edit EncoreCoach Custom Post"
 msgstr ""
 
 #: ../functions.php:417
-msgid "New AndyRaub Custom Post"
+msgid "New EncoreCoach Custom Post"
 msgstr ""
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View AndyRaub Custom Post"
+msgid "View EncoreCoach Custom Post"
 msgstr ""
 
 #: ../functions.php:420
-msgid "Search AndyRaub Custom Post"
+msgid "Search EncoreCoach Custom Post"
 msgstr ""
 
 #: ../functions.php:421
-msgid "No AndyRaub Custom Posts found"
+msgid "No EncoreCoach Custom Posts found"
 msgstr ""
 
 #: ../functions.php:422
-msgid "No AndyRaub Custom Posts found in Trash"
+msgid "No EncoreCoach Custom Posts found in Trash"
 msgstr ""
 
 #: ../index.php:6

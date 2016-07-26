@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: AndyRaub WordPress Theme\n"
+"Project-Id-Version: EncoreCoach WordPress Theme\n"
 "POT-Creation-Date: 2012-10-18 00:53+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ioan Virag <ioan@ioanvirag.com>\n"
@@ -117,45 +117,45 @@ msgid "View Article"
 msgstr "Vezi Articol"
 
 #: ../functions.php:438 ../functions.php:439
-msgid "AndyRaub Custom Post"
-msgstr "Tip de postare customizată AndyRaub"
+msgid "EncoreCoach Custom Post"
+msgstr "Tip de postare customizată EncoreCoach"
 
 #: ../functions.php:440
 msgid "Add New"
 msgstr "Adaugă Nou"
 
 #: ../functions.php:441
-msgid "Add New AndyRaub Custom Post"
-msgstr "Adaugă un nou tip de postare customizată AndyRaub"
+msgid "Add New EncoreCoach Custom Post"
+msgstr "Adaugă un nou tip de postare customizată EncoreCoach"
 
 #: ../functions.php:442
 msgid "Edit"
 msgstr "Editare"
 
 #: ../functions.php:443
-msgid "Edit AndyRaub Custom Post"
-msgstr "Editare postare customizată de tip AndyRaub"
+msgid "Edit EncoreCoach Custom Post"
+msgstr "Editare postare customizată de tip EncoreCoach"
 
 #: ../functions.php:444
-msgid "New AndyRaub Custom Post"
-msgstr "Nouă postare customizată de tip AndyRaub"
+msgid "New EncoreCoach Custom Post"
+msgstr "Nouă postare customizată de tip EncoreCoach"
 
 #: ../functions.php:445 ../functions.php:446
-msgid "View AndyRaub Custom Post"
-msgstr "Vezi postare customizată de tip AndyRaub"
+msgid "View EncoreCoach Custom Post"
+msgstr "Vezi postare customizată de tip EncoreCoach"
 
 #: ../functions.php:447
-msgid "Search AndyRaub Custom Post"
-msgstr "Caută postare customizată de tip AndyRaub"
+msgid "Search EncoreCoach Custom Post"
+msgstr "Caută postare customizată de tip EncoreCoach"
 
 #: ../functions.php:448
-msgid "No AndyRaub Custom Posts found"
-msgstr "Nu s-a găsit nici o postare customizată de tip AndyRaub"
+msgid "No EncoreCoach Custom Posts found"
+msgstr "Nu s-a găsit nici o postare customizată de tip EncoreCoach"
 
 #: ../functions.php:449
-msgid "No AndyRaub Custom Posts found in Trash"
+msgid "No EncoreCoach Custom Posts found in Trash"
 msgstr ""
-"Nu s-a găsit nici o postare customizată de tip AndyRaub în coşul de gunoi"
+"Nu s-a găsit nici o postare customizată de tip EncoreCoach în coşul de gunoi"
 
 #: ../index.php:6
 msgid "Latest Posts"
