@@ -1,0 +1,36 @@
+
+
+/*---------------------------------------------------------*\
+                       Mixins
+\*---------------------------------------------------------*/
+
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+/*---------------------------------------------------------*\
+                      Extends & Mixins
+\*---------------------------------------------------------*/
+
+//@extend-elements
+
+//p, li
+%extend_basic_text {
+	font-family: $font_family;
+	font-size: 80%;
+	color: $font_color;
+}
+
+//.wp-caption .wp-caption-text, .gallery-caption
+%extend_captions {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}

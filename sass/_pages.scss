@@ -1,0 +1,16 @@
+// _pages.scss
+
+p {
+	.form-allowed-tags {
+		display: none;
+	}
+	#form-allowed-tags {
+		display: none;
+	}
+}
+
+.post {
+    .tiled-gallery-caption {
+        display:none !important;
+    }
+}

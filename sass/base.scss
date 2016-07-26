@@ -1,0 +1,25 @@
+/*
+	Theme Name: Andy Raub
+	Theme URI: http://matthewtrader.com
+	Description:  WordPress Theme
+	Version: 1.0
+	Author: Matthew T Rader (@matthew_t_rader)
+	Author URI: http://MatthewTRader.com
+*/
+
+
+/*---------------------------------------------------------*\
+                      Partials
+\*---------------------------------------------------------*/
+
+@import 'normalize.scss';
+@import 'foundation.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+@import 'bxslider.scss';
+@import 'wp_core.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'homepage.scss';
+@import 'pages.scss';
