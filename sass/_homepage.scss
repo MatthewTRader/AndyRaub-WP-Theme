@@ -26,6 +26,8 @@
     }
     
     .bx-wrapper {
+        margin: 0 auto;
+        
         .bx-pager.bx-default-pager a {
             display: none;
         }
@@ -58,14 +60,14 @@
 }
 
 #intro {
-    padding: 50px 0;
+    padding: 60px 0;
     
     .image {
         padding-right: 50px;
     }
     
     .text {
-        padding-top:30px;
+        padding-top:50px;
     }
     
     h2 {
