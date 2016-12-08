@@ -1,3 +1,75 @@
 header {
+    padding:10px 0;
+    
+    #logo {
+        max-width: 350px;
+        display: block;
+        float: left;
+    }
+    
+    nav {
+        text-align: right;
+        float: right;
+        margin-top:80px;
+        
+        li {
+            list-style: none;
+            display: inline-block;
+            
+            &:hover {
+                color: lighten($color-4, 10%);
+            }
+        }
+        
+        a {
+            padding: 20px 0 20px 20px;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: $color-4;
+            
+        }
+    }
+    
+    #headerTop {
+        position: absolute;
+        top:10px;
+        right:5%;
+        left: auto;
+        width:100px;
+        display: inline-block;
+        
+        span {
+            font-size: 1.6em;
+            color: $font-2-color;
+            display: inline-block;
+            float: right;
+            margin-top: 5px;
+            font-weight: 500
+        }
+        
+        .search {
+            display: inline-block;
+            float: right;
+            
+            label {
+                display: inline-block;
+
+                &:before {
+                    content: "\f002";
+                    font-family: FontAwesome;
+                    font-size: 1.8em;
+                    cursor: pointer;
+                    color: $font-2-color;
+                    margin-right: 10px;
+                }
+
+            }
+
+            input {
+                display: none;
+            }
+        }
+    }
     
 }

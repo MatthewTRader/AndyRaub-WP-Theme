@@ -82,31 +82,6 @@ function _nav()
 	);
 }
 
-// Load EncoreCoach scripts (header.php)
-function _header_scripts()
-{
-    if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
-
-    	wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
-        wp_enqueue_script('conditionizr'); // Enqueue it!
-
-        wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
-        wp_enqueue_script('modernizr'); // Enqueue it!
-
-        wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('scripts'); // Enqueue it!
-    }
-}
-
-// Load EncoreCoach conditional scripts
-function _conditional_scripts()
-{
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
-}
-
 // Load EncoreCoach styles
 function _styles()
 {
@@ -114,6 +89,39 @@ function _styles()
     wp_register_style('', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style(''); // Enqueue it!
 }
+
+
+// Load EncoreCoach scripts (header.php)
+function _header_scripts()
+{
+    if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
+        
+        wp_register_script('jquery', get_template_directory_uri() . 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), '3.1.1'); // Custom scripts
+        wp_enqueue_script('jquery'); // Enqueue it!
+
+        wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
+        wp_enqueue_script('modernizr'); // Enqueue it!
+
+        wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('scripts'); // Enqueue it!
+        
+        wp_register_script('font-awesome', 'https://use.fontawesome.com/f7da517c51.js', array(), '1.0.0'); // Custom scripts
+        wp_enqueue_script('font-awesome'); // Enqueue it!
+        
+        wp_register_script('bxslider', get_template_directory_uri() . '/js/jquery.bxslider.min.js', array('jquery'), '4.1.2'); // Custom scripts
+        wp_enqueue_script('bxslider'); // Enqueue it!
+    }
+}
+
+
+// Load Google fonts
+function load_google_fonts() {
+    wp_register_style('googleWebFonts', 'https://fonts.googleapis.com/css?family=Martel+Sans:300,400,700,800');
+    wp_enqueue_style('googleWebFonts');
+}
+add_action('wp_print_styles', 'load_google_fonts');
+
+
 
 // Register EncoreCoach Navigation
 function register_EncoreCoach_menu()
