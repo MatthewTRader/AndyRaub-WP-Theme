@@ -54,6 +54,23 @@
             </div>
         </section>
         
+        <section id="benefits">
+            <div class="container">
+                 <h2><?php echo CFS()->get( 'form_header' ); ?></h2>
+                 <div class="benefits">
+                    <?php
+                        $fields = CFS()->get( 'benefits' );
+                        foreach ( $fields as $field )
+                    { ?>
+                        <div class="benefit">
+                          <img src="<?php echo $field['benefit_image']; ?>"><br>
+                          <p><?php echo $field['benefit_description']; ?></p>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </section>
+        
         <?php the_content(); ?>
         
 	</main>

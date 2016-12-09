@@ -71,9 +71,7 @@
     }
     
     h2 {
-        font-size: 3.6rem;
-        text-align: center;
-        font-weight: 600;
+        margin-bottom: 20px;
     }
     
     p {
@@ -107,21 +105,18 @@
     padding: 100px 0;
     
     h2 {
-        text-align: center;
         color: $color-2;
-        margin-bottom: 40px;
-        font-size: 3.6rem;
-        text-align: center;
-        font-weight: 600;
+        margin-bottom: 75px;
     }
     
     input {
         height: 40px;
         width: 100%;
-        padding: 5px 10px 0;
+        padding: 10px;
         
         @include placeholder {
             font-size: 2rem;
+            line-height: 2rem;
             color: $placeholder-color;
         }
     }
@@ -137,6 +132,41 @@
         
         &:hover {
             background: darken($color-3, 10%);
+        }
+    }
+}
+
+#benefits {
+    
+    background: $color-5;
+    padding: 100px 0;
+    
+        
+    h2 {
+        margin-bottom: 75px;
+    }
+    
+    .benefits {
+        @include display-flex();
+        @include align-content($align: center);
+        text-align: center;
+    }
+    
+    .benefit {
+        @include flex-direction($direction: row);
+        @include flex($grow: 1, $shrink: 1, $basis: auto);
+        padding: 0 2rem;
+        
+        image {
+            margin: auto;
+        }
+        
+        p {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            text-align: center;
+            font-weight: 600;
+            margin-top:25px;
         }
     }
 }
