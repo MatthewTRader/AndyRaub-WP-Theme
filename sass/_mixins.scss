@@ -4,13 +4,19 @@
                        Mixins
 \*---------------------------------------------------------*/
 
-
 @mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
 }
 
 
@@ -19,25 +25,24 @@
 \*---------------------------------------------------------*/
 
 //@extend-elements
-
 //p, li
+
 %extend_basic_text {
-	font-family: $font_family;
-	font-size: 80%;
-	color: $font_color;
+    font-family: $font_family;
+    font-size: 80%;
+    color: $font_color;
 }
 
 //.wp-caption .wp-caption-text, .gallery-caption
 %extend_captions {
-	font-size: 11px;
-	line-height: 17px;
-	margin: 0;
-	padding: 0 4px 5px;
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
 }
 
-
-@mixin box-shadow( $h: 10px , $v: 10px , $b: 0px , $s: 0px , $c: #000000 ) {
+@mixin box-shadow( $h: 10px, $v: 10px, $b: 0px, $s: 0px, $c: #000000) {
     -webkit-box-shadow: $h $v $b $s $c;
     -moz-box-shadow: $h $v $b $s $c;
     box-shadow: $h $v $b $s $c;
- }
+}

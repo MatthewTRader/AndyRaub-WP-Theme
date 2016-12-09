@@ -36,6 +36,24 @@
             </div>
         </section>
 
+        <section id="form">
+            <div class="container">
+                <h2><?php echo CFS()->get( 'form_header' ); ?></h2>
+                
+                <?php 
+                    function formShortCode()
+                        {
+                            return CFS()->get( 'form_shortcode' );
+                        }
+                    
+                    $formShortCode = formShortCode();
+
+                    echo do_shortcode($formShortCode);    
+                ?>
+                
+            </div>
+        </section>
+        
         <?php the_content(); ?>
         
 	</main>
