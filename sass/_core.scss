@@ -36,6 +36,7 @@ h2 {
 a {
 	color: $font-color;
 	text-decoration: none;
+    @include transition(all ease 0.3s);
 	&:hover {
 		color: $font-hover-color;
 		outline: 0;

@@ -71,7 +71,42 @@
             </div>
         </section>
         
-        <?php the_content(); ?>
+        <section id="articles">
+             <div class="container">
+                 <div class="row">
+                     
+                    <?php
+                        $args = array( 'posts_per_page' => 2, 'category' => 'Featured', );
+                        $lastposts = get_posts( $args );
+                        foreach ( $lastposts as $post ) :
+                          setup_postdata( $post ); ?>
+
+                            <article id="post-<?php the_ID(); ?>" class="medium-6 columns">
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+
+                                    <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
+
+                                        <?php the_post_thumbnail('homeArticle'); // Declare pixel size you need inside the array ?>
+                                    
+                                    <?php endif; ?>
+
+                                    <div class="textBox">
+
+                                        <h2>
+                                            <?php the_title(); ?>
+                                        </h2>
+
+                                        <p><?php echo wp_trim_words( get_the_content(), 25, '...' ); ?></p>
+                                        <a class="readMore" href="<?php the_permalink(); ?>"><p>Read More</p></a>
+
+                                    </div>
+                                </a>
+                            </article>
+
+                        <?php endforeach; wp_reset_postdata(); ?>
+                </div>
+            </div>
+        </section>
         
 	</main>
 

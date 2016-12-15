@@ -26,7 +26,8 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-
+    add_image_size('homeArticle', 700, 467, array( 'center', 'top' ) ); 
+    
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
@@ -235,18 +236,16 @@ function EncoreCoach_custom_post($length)
 function EncoreCoach_excerpt($length_callback = '', $more_callback = '')
 {
     global $post;
-    if (function_exists($length_callback)) {
         add_filter('excerpt_length', $length_callback);
-    }
-    if (function_exists($more_callback)) {
         add_filter('excerpt_more', $more_callback);
-    }
+
     $output = get_the_excerpt();
     $output = apply_filters('wptexturize', $output);
     $output = apply_filters('convert_chars', $output);
     $output = '<p>' . $output . '</p>';
     echo $output;
 }
+
 
 // Custom View Article link to Post
 function EncoreCoach_view_article($more)
