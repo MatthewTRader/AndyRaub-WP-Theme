@@ -2,19 +2,61 @@ header {
     padding:10px 0;
     
     #logo {
-        max-width: 350px;
+        max-width: 250px;
         display: block;
         float: left;
+        margin-bottom: 20px;
+        
+         @media (min-width: 640px) {
+             max-width: 300px;
+        }
+        
+         @media (min-width: 1200px) {
+             max-width: 350px;
+             margin-bottom: 0;
+        }
     }
     
     nav {
-        text-align: right;
-        float: right;
-        margin-top:80px;
+        @media (max-width: 640px) {
+            position: absolute;
+            z-index: 100;
+            top: 115px;
+            right: 0;
+            height: 100vh;
+            background: transparentize($color-4, .03);
+            width:80%;
+            text-align: left;
+        }
+        
+        width:100%;
+        clear: both;
+        text-align: center;
+        
+        @media (min-width: 1200px) {
+            float: right;
+            text-align: right;
+            margin-top:80px;
+            width:auto;
+            clear:initial;
+        }
+        
+        ul {
+            
+            margin-left: 0;
+            
+            @media (min-width: 640px) {
+                margin-left: 1.25rem;
+            }
+        }
         
         li {
             list-style: none;
-            display: inline-block;
+            display: block;
+            
+            @media (min-width: 640px) {
+                display: inline-block;
+            }
             
             &:hover {
                 color: lighten($color-4, 10%);
@@ -22,22 +64,52 @@ header {
         }
         
         a {
-            padding: 20px 0 20px 20px;
+            color: $color-2;
+            display: block;
+            padding: 20px 20px;
+            border-top:1px solid #777;
             text-transform: uppercase;
             font-size: 1.6rem;
             font-weight: 600;
-            color: $color-4;
             
+            &:hover {
+                color: $color-2;
+            }
+            
+            @media (min-width: 640px) {
+                padding: 20px 10px;
+                color: $color-4;
+                border: none;
+                    
+                &:hover {
+                    color: lighten($color-4, 10%);
+                }
+            }
+            
+             @media (min-width: 1200px) {
+                 padding: 20px 0 20px 20px;
+            }
+            
+        }
+        
+        &.mobileOn {
+            margin-right: -80%;
         }
     }
     
     #headerTop {
-        position: absolute;
-        top:10px;
-        right:5%;
-        left: auto;
-        width:100px;
-        display: inline-block;
+        
+        display: none;
+        
+        @media (min-width: 640px) {
+            display: block;
+            position: absolute;
+            top:10px;
+            right:5%;
+            left: auto;
+            width:100px;
+            display: inline-block;
+        }
         
         span {
             font-size: 1.6em;

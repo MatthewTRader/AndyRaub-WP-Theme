@@ -195,6 +195,42 @@ if (function_exists('register_sidebar'))
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+    
+
+    // Define Footer Widget Area 1
+    register_sidebar(array(
+        'name' => __('Footer-left widget', ''),
+        'description' => __('Left footer widget', ''),
+        'id' => 'footer-widget-1',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    
+
+    // Define Footer Widget Area 2
+    register_sidebar(array(
+        'name' => __('Footer-middle widget', ''),
+        'description' => __('Middle footer widget', ''),
+        'id' => 'footer-widget-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    
+
+    // Define Footer Widget Area 3
+    register_sidebar(array(
+        'name' => __('Footer-right widget', ''),
+        'description' => __('Right footer widget', ''),
+        'id' => 'footer-widget-3',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
 }
 
 // Remove wp_head() injected Recent Comment styles

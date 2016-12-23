@@ -3,11 +3,15 @@
         margin:0;
         
         li {
-            height: 600px;
+            height: 50vh;
             background-size: cover;
             background-repeat: no-repeat;
             display: block;
             width: 100%;
+            
+            @media (min-width: 640px) {
+                height: 600px;
+            }
         }
     }
     
@@ -15,14 +19,31 @@
         font-family: "Martel Sans",sans-serif;
         font-weight: 800;
         color: $color-4;
-        font-size: 7rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
         position: absolute;
         left: -6px;
-        bottom: 15%;
-        line-height: 7.5rem;
+        bottom: -6px;
+        right:0;
         text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.4);
         background: rgba(255, 255, 255, 0.7);
-        padding: 15px 10px 5px 150px;
+        padding: 20px 10px;
+        text-align: center;
+        
+        @media (min-width: 640px) {
+            font-size: 5rem;
+            line-height: 5.5rem;
+            bottom: 15%;
+            padding: 15px 10px 5px 150px;
+            left: -6px;
+            right: auto;
+            text-align: left;
+        }
+        
+        @media (min-width: 1200px) {
+            font-size: 7rem;
+            line-height: 7.5rem;
+        }
     }
     
     .bx-wrapper {
@@ -39,6 +60,7 @@
             width: 117px;
             opacity: .1;
             top: 34%;
+            z-index: 99;
             
             &:hover {
                 opacity: .7;
@@ -51,6 +73,7 @@
             width: 117px;
             opacity: .1;
             top: 34%;
+            z-index: 99;
             
             &:hover {
                 opacity: .7;
@@ -60,7 +83,12 @@
 }
 
 #intro {
-    padding: 100px 0;
+    
+    padding: 50px 0;
+    
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
     
     .image {
         padding-right: 50px;
@@ -82,13 +110,17 @@
 
 #video {
     
-    height: 100vh;
+    @media (min-width: 640px) {
+        height: 100vh;
+    }
     
     .videoWrapper {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */
         padding-top: 25px;
-        height: 100vh;
+        @media (min-width: 640px) {
+            height: 100vh;
+        }
     }
     .videoWrapper iframe {
         position: absolute;
@@ -102,7 +134,11 @@
 #form {
     
     background: $color-4;
-    padding: 100px 0;
+    padding: 50px 0;
+    
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
     
     h2 {
         color: $color-2;
@@ -139,7 +175,11 @@
 #benefits {
     
     background: $color-5;
-    padding: 100px 0;
+    padding: 50px 0;
+    
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
     
         
     h2 {
@@ -147,15 +187,31 @@
     }
     
     .benefits {
-        @include display-flex();
+
         @include align-content($align: center);
         text-align: center;
+        
+        @media (min-width: 640px) {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flexbox;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
     }
     
     .benefit {
-        @include flex-direction($direction: row);
-        @include flex($grow: 1, $shrink: 1, $basis: auto);
-        padding: 0 2rem;
+         
+        width: 100%;
+        padding: 10px 0;
+        
+        @media (min-width: 640px) {
+            
+            @include flex($grow: 1, $shrink: 1, $basis: auto);
+            width:initial;
+            padding: 0 2rem;
+        }
         
         image {
             margin: auto;
@@ -173,17 +229,26 @@
 
 #articles {
     
-    padding: 100px 0;
+    padding: 50px 0;
+    
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
     
     article {
+        padding:10px 0;
         
-        
-        &:first-child {
-            padding-right: 30px;
-        }
-        
-        &:nth-child(2) {
-            padding-left: 30px;
+        @media (min-width: 1024px) {
+            
+            padding: 0;
+            
+            &:first-child {
+                padding-right: 30px;
+            }
+
+            &:nth-child(2) {
+                padding-left: 30px;
+            }
         }
         
         .textBox {

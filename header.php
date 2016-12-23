@@ -26,7 +26,7 @@
                 </a>
 
                 <nav class="nav" role="navigation">
-                    <?php _nav(); ?>
+                    <?php wp_nav_menu( array('menu' => 'Main', 'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>' )); ?>
                 </nav>
 
                 <div id="headerTop">

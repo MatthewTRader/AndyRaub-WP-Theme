@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 	<main role="main">
+        <div class="container">
 		<!-- section -->
 		<section>
 
@@ -12,8 +13,7 @@
 
 		</section>
 		<!-- /section -->
+        </div>
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

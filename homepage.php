@@ -19,10 +19,10 @@
         <section id="intro">
             <div class="container">
                 <div class="row">
-                    <div class="medium-7 columns image">
+                    <div class="large-7 columns image">
                         <img src="<?php echo CFS()->get( 'intro_image' ); ?>">
                     </div>
-                    <div class="medium-5 columns text">
+                    <div class="large-5 columns text">
                         <h2><?php echo CFS()->get( 'intro_header' ); ?></h2>
                         <p><?php echo CFS()->get( 'intro_text' ); ?></p>
                     </div>
@@ -81,7 +81,7 @@
                         foreach ( $lastposts as $post ) :
                           setup_postdata( $post ); ?>
 
-                            <article id="post-<?php the_ID(); ?>" class="medium-6 columns">
+                            <article id="post-<?php the_ID(); ?>" class="large-6 columns">
                                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 
                                     <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
