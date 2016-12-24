@@ -66,6 +66,11 @@ a {
 		}
 	}
 }
+
+body {
+    overflow-x: hidden;
+}
+
 .zeroPadding {
 	padding: 0;
 }
@@ -166,9 +171,14 @@ input:focus {
 }
 
 .container {
-    max-width: 85%;
+    max-width: 95%;
     margin: auto;
+    position: relative;
     
+    @media (min-width:1601px) {
+        max-width: 85%;
+    }
+
     @media (min-width:1601px) {
         max-width: 1400px;
     }

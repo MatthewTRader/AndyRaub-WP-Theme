@@ -24,6 +24,8 @@
                 <a href="<?php echo home_url(); ?>">
                     <img id="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
                 </a>
+                
+                <i class="fa fa-bars mobileMenuButton" aria-hidden="true"></i>
 
                 <nav class="nav" role="navigation">
                     <?php wp_nav_menu( array('menu' => 'Main', 'items_wrap' => '<ul class="dropdown menu" data-dropdown-menu>%3$s</ul>' )); ?>

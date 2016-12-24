@@ -34,6 +34,16 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
 		ga('send', 'pageview');
+            
+        (function($) {  
+            $( document ).ready(function() {
+                $('.mobileMenuButton').on('click', function(e) {
+                  $('nav').toggleClass("mobileOn");
+                  e.preventDefault();
+                });
+            });
+        })(jQuery);
+            
 		</script>
 
 	</body>
