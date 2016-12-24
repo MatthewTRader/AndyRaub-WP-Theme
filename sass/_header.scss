@@ -5,7 +5,7 @@ header {
         max-width: 250px;
         display: block;
         float: left;
-        margin-bottom: 20px;
+        margin-top: 5px;
         
          @media (min-width: 640px) {
              max-width: 300px;
@@ -13,7 +13,6 @@ header {
         
          @media (min-width: 1200px) {
              max-width: 350px;
-             margin-bottom: 0;
         }
     }
     
@@ -21,11 +20,11 @@ header {
         @media (max-width: 640px) {
             position: absolute;
             z-index: 100;
-            top: 105px;
-            right: -10px;
+            top: 90px;
+            right: -15px;
             height: 100vh;
             background: transparentize($color-4, .03);
-            width:80%;
+            width: 80%;
             text-align: left;
             margin-right: -83%;
             @include transition(all ease 0.3s);
@@ -38,7 +37,7 @@ header {
         @media (min-width: 1200px) {
             float: right;
             text-align: right;
-            margin-top:80px;
+            margin-top:55px;
             width:auto;
             clear:initial;
         }
@@ -89,7 +88,7 @@ header {
             }
             
              @media (min-width: 1200px) {
-                 padding: 20px 0 20px 20px;
+                 padding: 20px 0 5px 20px;
             }
             
         }
@@ -150,9 +149,13 @@ header {
         color: #777;
         font-size: 2.5rem;
         position: absolute;
-        top: 40px;
+        top: 35px;
         right: 25px;
         cursor: pointer;
+        
+         @media (min-width: 640px) {
+             display: none;
+        }
     }
     
 }

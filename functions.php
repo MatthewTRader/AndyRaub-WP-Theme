@@ -377,7 +377,7 @@ function comments($comment, $args, $depth)
 
 // Add Actions
 add_action('init', '_header_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_print_scripts', '_conditional_scripts'); // Add Conditional Page Scripts
+//add_action('wp_print_scripts', '_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', '_styles'); // Add Theme Stylesheet
 add_action('init', 'register_EncoreCoach_menu'); // Add EncoreCoach Menu
