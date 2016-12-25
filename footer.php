@@ -39,6 +39,7 @@
             $( document ).ready(function() {
                 $('.mobileMenuButton').on('click', function(e) {
                   $('nav').toggleClass("mobileOn");
+                    $('header').toggleClass("mobileOn");
                   e.preventDefault();
                 });
             });
