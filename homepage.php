@@ -1,7 +1,14 @@
 <?php /* Template Name: Homepage Template */ get_header(); ?>
 
 	<main role="main" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                
+        
+        <?php
+           if ($site_address = $cfs->get('announcement')) {
+               ?> <section id="anouncement" style="background:<?php echo CFS()->get( 'background_color' ); ?>;"> <?php
+                    echo CFS()->get( 'annoucement_text' );
+              ?> </section> <?php
+        } ?>
+           
         <section id="slider">
             <ul class="bxslider">
                 <?php
@@ -16,7 +23,19 @@
             </ul>
         </section>
         
-        <section id="intro">
+        <section id="statement">
+            <div class="container">
+                <h2><?php echo CFS()->get( 'statement' ); ?></h2> 
+            </div>
+        </section>
+        
+        <section id="video">
+            <div class="videoWrapper">
+                <?php echo CFS()->get( 'video_iframe' ); ?>
+            </div>
+        </section>
+        
+         <section id="intro">
             <div class="container">
                 <div class="row">
                     <div class="large-7 columns image">
@@ -27,30 +46,6 @@
                         <p><?php echo CFS()->get( 'intro_text' ); ?></p>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="video">
-            <div class="videoWrapper">
-                <?php echo CFS()->get( 'video_iframe' ); ?>
-            </div>
-        </section>
-
-        <section id="form">
-            <div class="container">
-                <h2><?php echo CFS()->get( 'form_header' ); ?></h2>
-                
-                <?php 
-                    function formShortCode()
-                        {
-                            return CFS()->get( 'form_shortcode' );
-                        }
-                    
-                    $formShortCode = formShortCode();
-
-                    echo do_shortcode($formShortCode);    
-                ?>
-                
             </div>
         </section>
         

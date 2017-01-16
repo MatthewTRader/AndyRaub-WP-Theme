@@ -26,9 +26,13 @@ h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-size: 3.6rem;
+    font-size: 2rem;
     text-align: center;
     font-weight: 600;
+
+    @media (min-width: 640px) {
+        font-size: 3.6rem;
+    }
 }
 
 .center {
@@ -93,7 +97,7 @@ main {
     
     min-height: 10vh;
     
-    @media (min-width: 641px) {
+    @media (min-width: 640px) {
         min-height: 53vh;
     }
 
@@ -206,4 +210,24 @@ input:focus {
 
 .row {
     max-width: initial !important;   
+}
+
+.button {
+    background: $color-3;
+    color: $color-2;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border: none;
+    padding: 13px 20px 10px;
+    @include transition(all ease 0.3s);
+    margin-right: 20px;
+
+    &:hover {
+        background: darken($color-3, 10%);
+    }
+}
+
+.buttons {
+    text-align: center;
+    margin-top:30px;
 }
