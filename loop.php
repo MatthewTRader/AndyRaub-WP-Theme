@@ -18,7 +18,7 @@
 		</h2>
 		<!-- /post title -->
 
-		<?php EncoreCoach_excerpt('EncoreCoach_custom_post'); // Build your custom callback length in functions.php ?>
+		<p><?php echo wp_trim_words( get_the_content(), 60, '...' ); ?> <a class="readMore" href="<?php the_permalink(); ?>">Read More</a></p>
         
         <br class="clear" />
 

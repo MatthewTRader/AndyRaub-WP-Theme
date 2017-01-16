@@ -257,12 +257,15 @@ function EncoreCoach_pagination()
 }
 
 // Custom Excerpts
-function EncoreCoach_index($length) // Create 20 Word Callback for Index page Excerpts, call using EncoreCoach_excerpt('EncoreCoach_index');
+
+// Create 20 Word Callback for Index page Excerpts, call using EncoreCoach_excerpt('EncoreCoach_index');
+function EncoreCoach_index($length) 
 {
     return 20;
 }
 
-// Create 40 Word Callback for Custom Post Excerpts, call using EncoreCoach_excerpt('EncoreCoach_custom_post');
+
+// Create 60 Word Callback for Custom Post Excerpts, call using EncoreCoach_excerpt('EncoreCoach_custom_post');
 function EncoreCoach_custom_post($length)
 {
     return 60;
