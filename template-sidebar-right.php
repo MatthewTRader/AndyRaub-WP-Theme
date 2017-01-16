@@ -1,9 +1,12 @@
-<?php get_header(); ?>
+<?php /* Template Name: Page with right sidbar */ get_header(); ?>
+
+	<?php get_header(); ?>
 
 	<main role="main">
+        
         <div class="container">
             <!-- section -->
-            <section>
+            <section class="medium-9 columns">
 
 <!--
                 <h1>
@@ -41,7 +44,11 @@
 
             </section>
             <!-- /section -->
+            
+            <?php get_sidebar(); ?>
+            
         </div>
+        
 	</main>
 
 <?php get_footer(); ?>

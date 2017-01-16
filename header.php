@@ -34,7 +34,7 @@
                 <div id="headerTop">
                     <a href=""><span class="login">Login</span></a>
                     <div class="search">
-                        <input type="text">
+                        <?php get_template_part('searchform'); ?>
                         <label></label>
                     </div>
                 </div>

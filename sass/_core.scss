@@ -9,13 +9,16 @@ html {
 p {
 	@extend %extend_basic_text;
     color: $font-color;
+    font-size: 1.4rem;
 }
 li {
 	@extend %extend_basic_text;
+    font-size: 1.4rem;
 }
 h1 {
 	font-family: $font-family;
-	margin-left: 5px;
+	margin: 0 5px 10px 0;
+    color: $color-4;
 }
 h2, h3, h4, h5, h6 {
 	font-family: $font-family;
@@ -47,24 +50,25 @@ a {
 	&:active {
 		outline: 0;
 	}
-	img {
-		&.alignright {
-			float: right;
-			margin: 5px 0 20px 20px;
-		}
-		&.alignnone {
-			margin: 5px 20px 20px 0;
-		}
-		&.alignleft {
-			float: left;
-			margin: 5px 20px 20px 0;
-		}
-		&.aligncenter {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
+}
+
+img {
+    &.alignright {
+        float: right;
+        margin: 5px 0 14px 20px;
+    }
+    &.alignnone {
+        margin: 5px 20px 14px 0;
+    }
+    &.alignleft {
+        float: left;
+        margin: 5px 20px 14px 0;
+    }
+    &.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 body {
@@ -72,11 +76,26 @@ body {
     position: relative;
 }
 
+.clear {
+    clear:both;
+    &:before {
+        clear:both;
+    }
+    &:after {
+        clear:both;
+    }
+}
+
 .zeroPadding {
 	padding: 0;
 }
 main {
-    min-height: 60vh;
+    
+    min-height: 10vh;
+    
+    @media (min-width: 641px) {
+        min-height: 53vh;
+    }
 
     &.mobileOn {
         position: fixed;

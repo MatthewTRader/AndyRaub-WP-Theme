@@ -18,9 +18,9 @@
 		</h2>
 		<!-- /post title -->
 
-		<?php EncoreCoach_excerpt('EncoreCoach_index'); // Build your custom callback length in functions.php ?>
-
-		<?php edit_post_link(); ?>
+		<?php EncoreCoach_excerpt('EncoreCoach_custom_post'); // Build your custom callback length in functions.php ?>
+        
+        <br class="clear" />
 
 	</article>
 	<!-- /article -->

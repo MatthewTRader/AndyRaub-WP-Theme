@@ -42,7 +42,14 @@
                     $('header').toggleClass("mobileOn");
                   e.preventDefault();
                 });
+                
+                $('.search label').on('click', function(e) {
+                  $('header .search').toggleClass("openInput");
+                  e.preventDefault();
+                });
+                
             });
+            
         })(jQuery);
             
 		</script>

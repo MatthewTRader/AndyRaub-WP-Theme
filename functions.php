@@ -265,7 +265,7 @@ function EncoreCoach_index($length) // Create 20 Word Callback for Index page Ex
 // Create 40 Word Callback for Custom Post Excerpts, call using EncoreCoach_excerpt('EncoreCoach_custom_post');
 function EncoreCoach_custom_post($length)
 {
-    return 40;
+    return 60;
 }
 
 // Create the Custom Excerpts callback
