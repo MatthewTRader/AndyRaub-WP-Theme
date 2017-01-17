@@ -256,6 +256,20 @@ function EncoreCoach_pagination()
     ));
 }
 
+
+function ec_customize_register( $wp_customize ) {
+    $wp_customize->add_setting( 'ec_logo' ); // Add setting for logo uploader
+         
+    // Add control for logo uploader (actual uploader)
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'ec_logo', array(
+        'label'    => __( 'Upload Logo (replaces text)', 'ec' ),
+        'section'  => 'title_tagline',
+        'settings' => 'ec_logo',
+    ) ) );
+}
+add_action( 'customize_register', 'ec_customize_register' );
+
+
 // Custom Excerpts
 
 // Create 20 Word Callback for Index page Excerpts, call using EncoreCoach_excerpt('EncoreCoach_index');

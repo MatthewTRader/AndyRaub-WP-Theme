@@ -15,6 +15,7 @@
 		<?php wp_head(); ?>
 
 	</head>
+    
 	<body <?php body_class(); ?>>
 
         <header class="header clear" role="banner">
@@ -22,7 +23,7 @@
             <div class="container">
 
                 <a href="<?php echo home_url(); ?>">
-                    <img id="logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo">
+                    <img id="logo" src="<?php echo get_theme_mod( 'ec_logo' ) ?>" alt="Logo">
                 </a>
                 
                 <i class="fa fa-bars mobileMenuButton" aria-hidden="true"></i>
