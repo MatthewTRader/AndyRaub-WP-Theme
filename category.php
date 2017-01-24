@@ -14,6 +14,7 @@
 		</section>
 		<!-- /section -->
         </div>
+        <div class="clear"></div>
 	</main>
 
 <?php get_footer(); ?>

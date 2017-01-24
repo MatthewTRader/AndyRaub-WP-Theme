@@ -38,6 +38,7 @@
 
 		</section>
 		<!-- /section -->
+        <div class="clear"></div>
 	</main>
 
 <?php get_sidebar(); ?>
