@@ -5,13 +5,15 @@
         <h1><?php _e( 'Latest Posts', '' ); ?></h1>
 		<!-- section -->
 		<section>
+            
+            <div class="row small-up-2 medium-up-3 large-up-4"  data-equalizer data-equalize-by-row="true">
              <?php
                 $args = array( 'posts_per_page' => 12, 'category' => 'Featured', );
                 $lastposts = get_posts( $args );
                 foreach ( $lastposts as $post ) :
                   setup_postdata( $post ); ?>
-
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                    <div class="column">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-equalizer-watch>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 
                             <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
@@ -32,8 +34,10 @@
                             </div>
                         </a>
                     </article>
+                    </div>
 
-            <?php endforeach; wp_reset_postdata(); ?>
+                <?php endforeach; wp_reset_postdata(); ?>
+                </div>
 
 			<?php get_template_part('pagination'); ?>
 

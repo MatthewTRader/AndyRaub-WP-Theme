@@ -18,4 +18,6 @@ jQuery(document).ready(function ($)  {
         autoControls: true,
         controls: true
     });
+    
+    $(document).foundation();
 });
