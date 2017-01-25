@@ -28,7 +28,7 @@
                                     <?php the_title(); ?>
                                 </h2>
 
-                                <p><?php echo wp_trim_words( get_the_content(), 25, '...' ); ?></p>
+                                <p><?php echo EncoreCoach_excerpt('EncoreCoach_custom_post'); ?></p>
                                 <a class="readMore" href="<?php the_permalink(); ?>"><p>Read More</p></a>
 
                             </div>

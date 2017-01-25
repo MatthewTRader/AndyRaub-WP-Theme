@@ -3,7 +3,7 @@
 	<main role="main">
         <div class="container">
 	<!-- section -->
-	<section>
+	<section class="medium-9 columns">
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -61,10 +61,9 @@
 
 	</section>
 	<!-- /section -->
+        <?php get_sidebar(); ?>
         </div>
         <div class="clear"></div>
 	</main>
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

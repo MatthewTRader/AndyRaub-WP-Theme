@@ -1,5 +1,10 @@
 #anouncement {
-    padding: 15px 0;
+    padding: 10px 0;
+    
+    h3 {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 #slider {
@@ -19,29 +24,36 @@
         }
     }
     
-    h1 {
+    .sliderText {
         font-family: "Martel Sans",sans-serif;
-        font-weight: 800;
         color: $color-4;
-        font-size: 3rem;
-        line-height: 3.5rem;
         position: absolute;
-        left: -6px;
-        bottom: -6px;
+        left: 0;
+        bottom: 0;
         right:0;
         text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.4);
         background: rgba(255, 255, 255, 0.7);
         padding: 20px 10px;
         text-align: center;
         
-        @media (min-width: 640px) {
-            font-size: 5rem;
-            line-height: 5.5rem;
+        @media (min-width: 1200px) {
             bottom: 15%;
             padding: 15px 10px 5px 150px;
             left: -6px;
             right: auto;
             text-align: left;
+        }
+    }
+    
+    h1 {
+        font-weight: 800;
+        color: $color-4;
+        font-size: 3rem;
+        line-height: 3.5rem;
+        
+        @media (min-width: 640px) {
+            font-size: 5rem;
+            line-height: 5.5rem;
         }
         
         @media (min-width: 1200px) {
@@ -98,32 +110,6 @@
     h2 {
         color: $color-2;
     }
-    
-//    input {
-//        height: 40px;
-//        width: 100%;
-//        padding: 10px;
-//        
-//        @include placeholder {
-//            font-size: 2rem;
-//            line-height: 2rem;
-//            color: $placeholder-color;
-//        }
-//    }
-    
-//    .wpcf7-submit {
-//        background: $color-3;
-//        color: $color-2;
-//        font-size: 2rem;
-//        text-transform: uppercase;
-//        border: none;
-//        padding: 3px 10px;
-//        @include transition(all ease 0.3s);
-//        
-//        &:hover {
-//            background: darken($color-3, 10%);
-//        }
-//    }
 }
 
 #video {
@@ -134,8 +120,6 @@
     
     .videoWrapper {
         position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        padding-top: 25px;
         
         @media (min-width: 640px) {
             height: 100vh;
@@ -149,6 +133,49 @@
         height: 100%;
     }
 }
+
+
+#form {
+    
+    background: $color-4;
+    padding: 50px 0;
+    
+    @media (min-width: 1200px) {
+        padding: 100px 0;
+    }
+    
+    h2 {
+        color: $color-2;
+        margin-bottom: 25px;
+    }
+    
+    input {
+        height: 40px;
+        width: 100%;
+        padding: 10px;
+        
+        @include placeholder {
+            font-size: 2rem;
+            line-height: 2rem;
+            color: $placeholder-color;
+        }
+    }
+    
+    .wpcf7-submit {
+        background: $color-3;
+        color: $color-2;
+        font-size: 2rem;
+        text-transform: uppercase;
+        border: none;
+        padding: 3px 10px;
+        @include transition(all ease 0.3s);
+        
+        &:hover {
+            background: darken($color-3, 10%);
+        }
+    }
+}
+
 
 #intro {
     
@@ -241,27 +268,20 @@
         padding: 100px 0;
     }
     
+    .column {
+        margin:20px auto;
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+    }
+    
     article {
-        padding:10px 0;
-        
-        @media (min-width: 1024px) {
-            
-            padding: 0;
-            
-            &:first-child {
-                padding-right: 30px;
-            }
-
-            &:nth-child(2) {
-                padding-left: 30px;
-            }
-        }
+        border-bottom: 1px solid $color-5;
+        border-left: 1px solid $color-5;
+        border-right: 1px solid $color-5;
+        padding: 0;
         
         .textBox {
             padding: 35px 30px;
-            border-bottom: 1px solid $color-5;
-            border-left: 1px solid $color-5;
-            border-right: 1px solid $color-5;
         }
         
         img {

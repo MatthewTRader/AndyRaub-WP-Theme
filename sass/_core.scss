@@ -211,7 +211,7 @@ input:focus {
     max-width: initial !important;   
 }
 
-.button {
+.button, .submit {
     background: $color-3;
     color: $color-2;
     font-size: 1.8rem;
