@@ -112,7 +112,7 @@
                                             <?php the_title(); ?>
                                         </h2>
 
-                                        <p><?php echo EncoreCoach_excerpt('EncoreCoach_custom_post'); ?></p>
+                                        <p><?php echo get_the_excerpt(); ?></p>
                                         <a class="readMore" href="<?php the_permalink(); ?>"><p>Read More</p></a>
 
                                     </div>

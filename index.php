@@ -28,7 +28,7 @@
                                     <?php the_title(); ?>
                                 </h2>
 
-                                <p><?php echo EncoreCoach_excerpt('EncoreCoach_custom_post'); ?></p>
+                                <p><?php the_excerpt('custom_excerpt_length'); ?></p>
                                 <a class="readMore" href="<?php the_permalink(); ?>"><p>Read More</p></a>
 
                             </div>

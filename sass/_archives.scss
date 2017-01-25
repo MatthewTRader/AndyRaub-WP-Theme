@@ -54,6 +54,10 @@ main.blogArchives {
         padding: 100px 0;
     }
     
+    .view-article {
+        display: none;
+    }
+    
     section {
         padding-right: 0 !important;
     }
@@ -79,7 +83,7 @@ main.blogArchives {
             }
             
              @media (min-width: 1024px) {
-                 padding: 35px 30px;
+                 padding: 30px 20px;
             }
             
             p {
@@ -106,6 +110,7 @@ main.blogArchives {
             line-height: 2rem;
             font-weight: 400;
             @include transition(all ease 0.3s);
+            color: $color-4;
             
              @media (min-width: 641px) {
                 font-size: 2.5rem;
