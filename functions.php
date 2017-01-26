@@ -273,6 +273,106 @@ function ec_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'ec_customize_register' );
 
 
+
+
+/**
+ * Adds the individual sections, settings, and controls to the theme customizer
+ */
+function example_customizer( $wp_customize ) {
+    $wp_customize->add_section(
+        'font_settings',
+        array(
+            'title' => 'Font Settings',
+            'description' => 'You can set header and paragraph font size, color, and weight on all pages except homepage.',
+            'priority' => 35,
+        )
+    );
+    
+    //Header Font Fields
+    
+    $wp_customize->add_setting(
+        'header_font_color',
+        array(
+            'default' => '#003056',
+        )
+    );
+
+    $wp_customize->add_control(
+        'header_font_color',
+        array(
+            'label' => 'Header Font Color',
+            'section' => 'font_settings',
+            'type' => 'text',
+        )
+    );
+    $wp_customize->add_setting(
+        'header_font_weight',
+        array(
+            'default' => '600',
+        )
+    );
+
+    $wp_customize->add_control(
+        'header_font_weight',
+        array(
+            'label' => 'Header Font Weight',
+            'section' => 'font_settings',
+            'type' => 'text',
+        )
+    );
+    
+    //Paragraph Font Fields
+    
+    $wp_customize->add_setting(
+        'paragraph_font_color',
+        array(
+            'default' => '#555555',
+        )
+    );
+
+    $wp_customize->add_control(
+        'paragraph_font_color',
+        array(
+            'label' => 'Paragraph Font Color',
+            'section' => 'font_settings',
+            'type' => 'text',
+        )
+    );
+    $wp_customize->add_setting(
+        'paragraph_font_size',
+        array(
+            'default' => '1.4rem',
+        )
+    );
+
+    $wp_customize->add_control(
+        'paragraph_font_size',
+        array(
+            'label' => 'Paragraph Font Size, rem or px',
+            'section' => 'font_settings',
+            'type' => 'text',
+        )
+    );
+    $wp_customize->add_setting(
+        'paragraph_font_weight',
+        array(
+            'default' => '400',
+        )
+    );
+
+    $wp_customize->add_control(
+        'paragraph_font_weight',
+        array(
+            'label' => 'Paragraph Font Weight',
+            'section' => 'font_settings',
+            'type' => 'text',
+        )
+    );
+}
+        
+add_action( 'customize_register', 'example_customizer' );
+
+
 // Custom Excerpts
 
 // Create 20 Word Callback for Index page Excerpts, call using EncoreCoach_excerpt('EncoreCoach_index');
