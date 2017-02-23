@@ -66,8 +66,8 @@
                     <a href=""><span class="login">Login</span></a>
                     
                     <div class="search">
-                        <?php get_template_part('searchform'); ?>
                         <label></label>
+                        <?php get_template_part('searchform'); ?>
                     </div>
                     
                 </div>
