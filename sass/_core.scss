@@ -61,13 +61,16 @@ img {
         float: right;
         margin: 5px 0 14px 20px;
     }
+    
     &.alignnone {
         margin: 20px;
     }
+    
     &.alignleft {
         float: left;
         margin: 5px 20px 14px 0;
     }
+    
     &.aligncenter {
         display: block;
         margin: 20px auto;
