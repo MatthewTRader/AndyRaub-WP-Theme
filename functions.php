@@ -279,6 +279,7 @@ add_action( 'customize_register', 'ec_customize_register' );
  * Adds the individual sections, settings, and controls to the theme customizer
  */
 function example_customizer( $wp_customize ) {
+    
     $wp_customize->add_section(
         'font_settings',
         array(
@@ -365,6 +366,124 @@ function example_customizer( $wp_customize ) {
         array(
             'label' => 'Paragraph Font Weight',
             'section' => 'font_settings',
+            'type' => 'text',
+        )
+    );
+    
+    
+    
+    //Social Media Fields
+    
+    $wp_customize->add_section(
+        'social_settings',
+        array(
+            'title' => 'Social Settings',
+            'description' => 'For adding social media icons in the header.',
+            'priority' => 30,
+        )
+    );
+    
+    //Facebook
+    
+    $wp_customize->add_setting(
+        'show_facebook',
+        array(
+            'default'    => false,
+        )
+    );
+
+    $wp_customize->add_control(
+        'show_facebook',
+        array(
+            'label' => 'Facebook',
+            'section' => 'social_settings',
+            'settings'  => 'show_facebook',
+            'type' => 'checkbox',
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'facebook_link',
+        array(
+            'default' => 'https://facebook.com',
+        )
+    );
+
+    $wp_customize->add_control(
+        'facebook_link',
+        array(
+            'label' => 'Facebook URL',
+            'section' => 'social_settings',
+            'type' => 'text',
+        )
+    );
+    
+    //Twitter
+    
+    $wp_customize->add_setting(
+        'show_twitter',
+        array(
+            'default'    => false,
+        )
+    );
+
+    $wp_customize->add_control(
+        'show_twitter',
+        array(
+            'label' => 'Twitter',
+            'section' => 'social_settings',
+            'settings'  => 'show_twitter',
+            'type' => 'checkbox',
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'twitter_link',
+        array(
+            'default' => 'https://twtter.com',
+        )
+    );
+
+    $wp_customize->add_control(
+        'twitter_link',
+        array(
+            'label' => 'Twitter URL',
+            'section' => 'social_settings',
+            'type' => 'text',
+        )
+    );
+    
+    //LinkedIn
+    
+    $wp_customize->add_setting(
+        'show_linkedin',
+        array(
+            'default'    => false,
+        )
+    );
+
+    $wp_customize->add_control(
+        'show_linkedin',
+        array(
+            'label' => 'LinkedIn',
+            'section' => 'social_settings',
+            'settings'  => 'show_linkedin',
+            'type' => 'checkbox',
+        )
+    );
+    
+    $wp_customize->add_setting(
+        'linkedin_link',
+        array(
+            'default' => 'https://linkedin.com',
+        )
+    );
+
+    $wp_customize->add_control(
+        'linkedin_link',
+        array(
+            'label' => 'LinkedIn URL',
+            'section' => 'social_settings',
             'type' => 'text',
         )
     );

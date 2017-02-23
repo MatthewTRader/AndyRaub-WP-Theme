@@ -45,11 +45,31 @@
                 </nav>
 
                 <div id="headerTop">
+                    
+                    
+                    <div class="social-media">
+                        
+                        <?php if (true === get_theme_mod('show_facebook')) { ?>
+                            <a class="facebook" href="<?php echo get_theme_mod( 'facebook_link' ); ?>" target="_blank"></a>
+                       <?php } ?>
+                        
+                        <?php if (true === get_theme_mod('show_twitter')) { ?>
+                            <a class="twitter" href="<?php echo get_theme_mod( 'twitter_link' ); ?>" target="_blank"></a>
+                       <?php } ?>
+                        
+                        <?php if (true === get_theme_mod('show_linkedin')) { ?>
+                            <a class="linkedin" href="<?php echo get_theme_mod( 'linkedin_link' ); ?>" target="_blank"></a>
+                       <?php } ?>
+                        
+                    </div>
+                    
                     <a href=""><span class="login">Login</span></a>
+                    
                     <div class="search">
                         <?php get_template_part('searchform'); ?>
                         <label></label>
                     </div>
+                    
                 </div>
                 
             </div>
