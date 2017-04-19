@@ -9,30 +9,34 @@ html {
 p {
 	@extend %extend_basic_text;
     color: $font-color;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 li {
 	@extend %extend_basic_text;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 h1 {
-	font-family: $font-family;
+	font-family: $font-family-header;
 	margin: 0 5px 10px 0;
     color: $color-4;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
+
 h2, h3, h4, h5, h6 {
-	font-family: $font-family;
+	font-family: $font-family-header;
     color: $font-color;
 }
 
 h2 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.8rem;
     font-weight: 600;
+}
 
-    @media (min-width: 640px) {
-        font-size: 3.6rem;
-    }
+h3 {
+    font-size: 1.6rem;
+    font-style: italic;
 }
 
 .center {
@@ -41,9 +45,10 @@ h2 {
 	height: 100%;
 }
 a {
-	color: $font-color;
+	color: $color-3;
 	text-decoration: none;
     @include transition(all ease 0.3s);
+    font-size: 1.6rem;
 	&:hover {
 		color: $font-hover-color;
 		outline: 0;
@@ -217,12 +222,13 @@ input:focus {
 .button, .submit {
     background: $color-3;
     color: $color-2;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
     border: none;
     padding: 13px 20px 10px;
     @include transition(all ease 0.3s);
     margin-right: 20px;
+    font-weight: 600;
 
     &:hover {
         background: darken($color-3, 10%);

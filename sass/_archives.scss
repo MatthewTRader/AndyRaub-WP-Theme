@@ -1,42 +1,30 @@
-main.archives {
+#articles article {
     
-    article {
-        margin: 25px auto;
-        
-        a {
-            display: block;
-        }
-        
-        a.readMore {
-            display: initial;
-            
-        }
-        
         h2 {
             font-size: 2rem;
             line-height: 2.5rem;
             text-align: left;
-            
-            @media (min-width: 641px) {
-                font-size: 3rem;
-                line-height: 3.5rem;
-            }
+            font-weight: 500;
+            font: $font-family-header;
         }
         
         p {
+            @include transition(all ease 0.3s);
             text-align: left;
+            font-size: 1.6rem;
         }
-        
-        img {
-            float: left;
-            margin: 0 10px 4px 0;
-            max-width: 25%;
-        }
-    }
     
-    @media (min-width: 641px) {
-        
-    }
+        a.readMore {
+            display: initial;
+            
+            p {
+                font-size: 1.2rem;
+                text-transform:lowercase;
+                font-weight: 600;
+                color: $color-4;
+            }
+            
+        }
 }
 
 .pagination {
@@ -104,39 +92,29 @@ main.blogArchives {
         }
         
         h2 {
-            font-size: 1.5rem;
-            line-height: 2rem;
-            font-weight: 400;
-            @include transition(all ease 0.3s);
-            color: $color-4;
-            
-             @media (min-width: 641px) {
-                font-size: 2.5rem;
-                line-height: 3rem;
-            }
+            font-size: 2rem;
+            line-height: 2.5rem;
+            text-align: left;
+            font-weight: 500;
+            font: $font-family-header;
         }
         
         p {
             @include transition(all ease 0.3s);
-            font-size: 1.2rem;
-            line-height: 1.4rem;
-            margin-top: 15px;
-            
-            @media (min-width: 641px) {
-                font-size: 1.4rem;
-                line-height: 1.6rem;
-            }
+            text-align: left;
+            font: $font-family;
+            font-size: 1.6rem;
         }
         
         .readMore {
             position: absolute;
             right: 25px;
-            bottom: 5px;;
+            bottom: 5px;
             
             :after {
                 content: "\f061";
                 font-family: FontAwesome;
-                font-size: 1em;
+                font-size: 1.2rem;
                 cursor: pointer;
                 margin-left: 7px;
                 color: $color-3;
@@ -144,6 +122,10 @@ main.blogArchives {
             
             p {
                 margin-top: 0;
+                font-size: 1.2rem;
+                text-transform:lowercase;
+                font-weight: 600;
+                color: $color-4;
                 
                 &:hover  {
                     color: $color-3;

@@ -120,7 +120,7 @@ function _header_scripts()
 
 // Load Google fonts
 function load_google_fonts() {
-    wp_register_style('googleWebFonts', 'https://fonts.googleapis.com/css?family=Martel+Sans:300,400,700,800');
+    wp_register_style('googleWebFonts', 'https://fonts.googleapis.com/css?family=Roboto');
     wp_enqueue_style('googleWebFonts');
 }
 add_action('wp_print_styles', 'load_google_fonts');

@@ -113,7 +113,7 @@ header {
         }
         
         span {
-            font-size: 1.6em;
+            font-size: 1.6rem;
             color: $font-2-color;
             display: inline-block;
             float: right;
@@ -138,7 +138,7 @@ header {
                 &:before {
                     content: "\f002";
                     font-family: FontAwesome;
-                    font-size: 1.8em;
+                    font-size: 1.8rem;
                     cursor: pointer;
                     color: $font-2-color;
                     margin-right: 10px;
@@ -202,7 +202,7 @@ header {
             &:before {
                 content: "\f09a";
                 font-family: FontAwesome;
-                font-size: 1.8em;
+                font-size: 1.8rem;
                 cursor: pointer;
                 color: $font-2-color;
                 margin-right: 10px;
@@ -219,7 +219,7 @@ header {
             &:before {
                 content: "\f099";
                 font-family: FontAwesome;
-                font-size: 1.8em;
+                font-size: 1.8rem;
                 cursor: pointer;
                 color: $font-2-color;
                 margin-right: 10px;
@@ -236,7 +236,7 @@ header {
             &:before {
                 content: "\f0e1";
                 font-family: FontAwesome;
-                font-size: 1.8em;
+                font-size: 1.8rem;
                 cursor: pointer;
                 color: $font-2-color;
                 margin-right: 10px;
