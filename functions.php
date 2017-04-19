@@ -502,12 +502,12 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-// Custom View Article link to Post
-function EncoreCoach_view_article($more)
-{
-    global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', '') . '</a>';
-}
+//// Custom View Article link to Post
+//function EncoreCoach_view_article($more)
+//{
+//    global $post;
+//    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', '') . '</a>';
+//}
 
 
 // Remove 'text/css' from our enqueued stylesheet
