@@ -6,7 +6,7 @@
 		<!-- section -->
 		<section>
             
-            <div class="row small-up-2 medium-up-3 large-up-4"  data-equalizer data-equalize-by-row="true">
+            <div class="row small-up-1 medium-up-3 large-up-4"  data-equalizer data-equalize-by-row="true">
              <?php
                 $args = array( 'posts_per_page' => 12, 'category' => 'Featured', );
                 $lastposts = get_posts( $args );

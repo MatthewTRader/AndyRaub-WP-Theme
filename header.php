@@ -16,15 +16,12 @@
 
 	</head>
     <style>
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6, main.blogArchives article h2 {
             color: <?php echo get_theme_mod( 'header_font_color' ); ?>;
-            font-weight: <?php echo get_theme_mod( 'header_font_weight' ); ?>;
         }
         
         p, ul li, ol li {
             color: <?php echo get_theme_mod( 'paragraph_font_color' ); ?>;
-            font-size: <?php echo get_theme_mod( 'paragraph_font_size' ); ?>;
-            font-weight: <?php echo get_theme_mod( 'paragraph_font_weight' ); ?>;
         }
     
     </style>

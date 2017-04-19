@@ -12,15 +12,13 @@
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
+				<?php the_post_thumbnail(); // Fullsize image for the single post ?>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 
 			<!-- post title -->
 			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				<?php the_title(); ?>
 			</h1>
 			<!-- /post title -->
 

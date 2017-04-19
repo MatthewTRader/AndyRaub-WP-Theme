@@ -179,7 +179,7 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', ''),
+        'name' => __('Sidebar Widget Area 1', ''),
         'description' => __('Description for this widget-area...', ''),
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
@@ -190,9 +190,31 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Widget Area 2', ''),
+        'name' => __('Sidebar Widget Area 2', ''),
         'description' => __('Description for this widget-area...', ''),
         'id' => 'widget-area-2',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+    
+ // Define Sidebar Widget Area 3
+    register_sidebar(array(
+        'name' => __('Sidebar Widget Area 3', ''),
+        'description' => __('Description for this widget-area...', ''),
+        'id' => 'widget-area-3',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+    // Define Sidebar Widget Area 4
+    register_sidebar(array(
+        'name' => __('Sidebar Widget Area 4', ''),
+        'description' => __('Description for this widget-area...', ''),
+        'id' => 'widget-area-4',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -283,8 +305,8 @@ function example_customizer( $wp_customize ) {
     $wp_customize->add_section(
         'font_settings',
         array(
-            'title' => 'Font Settings',
-            'description' => 'You can set header and paragraph font size, color, and weight on all pages except homepage.',
+            'title' => 'Font Colors',
+            'description' => 'You can set header and paragraph font colors here.',
             'priority' => 35,
         )
     );
@@ -306,23 +328,8 @@ function example_customizer( $wp_customize ) {
             'type' => 'text',
         )
     );
-    $wp_customize->add_setting(
-        'header_font_weight',
-        array(
-            'default' => '600',
-        )
-    );
-
-    $wp_customize->add_control(
-        'header_font_weight',
-        array(
-            'label' => 'Header Font Weight',
-            'section' => 'font_settings',
-            'type' => 'text',
-        )
-    );
-    
-    //Paragraph Font Fields
+   
+    //Paragraph Font Color
     
     $wp_customize->add_setting(
         'paragraph_font_color',
@@ -339,37 +346,6 @@ function example_customizer( $wp_customize ) {
             'type' => 'text',
         )
     );
-    $wp_customize->add_setting(
-        'paragraph_font_size',
-        array(
-            'default' => '1.4rem',
-        )
-    );
-
-    $wp_customize->add_control(
-        'paragraph_font_size',
-        array(
-            'label' => 'Paragraph Font Size, rem or px',
-            'section' => 'font_settings',
-            'type' => 'text',
-        )
-    );
-    $wp_customize->add_setting(
-        'paragraph_font_weight',
-        array(
-            'default' => '400',
-        )
-    );
-
-    $wp_customize->add_control(
-        'paragraph_font_weight',
-        array(
-            'label' => 'Paragraph Font Weight',
-            'section' => 'font_settings',
-            'type' => 'text',
-        )
-    );
-    
     
     
     //Social Media Fields

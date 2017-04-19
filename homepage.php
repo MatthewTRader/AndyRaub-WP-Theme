@@ -16,10 +16,12 @@
                     foreach ( $fields as $field )
                     { ?>
                         <li style="background-position: <?php  $values = $field['image_position']; foreach ( $values as $key => $label ) { echo $label; } ?>; background-image:url(<?php echo $field['image']; ?>);" >
+                            <a href="<?php echo $field['slider_link']; ?>" >
                               <div class="sliderText">
                                 <h1><?php echo $field['header_text']; ?></h1>
                                 <h2><?php echo $field['sub_header_text']; ?></h2>
                             </div>
+                            </a>
                         </li>
                 <?php } ?>
             </ul>
@@ -71,7 +73,7 @@
         <?php if ($site_address = $cfs->get('show_benefits')) { ?>
         <section id="benefits">
             <div class="container">
-                 <h2><?php echo CFS()->get( 'form_header' ); ?></h2>
+                 <h2><?php echo CFS()->get( 'benefits_header' ); ?></h2>
                  <div class="benefits">
                     <?php
                         $fields = CFS()->get( 'benefits' );

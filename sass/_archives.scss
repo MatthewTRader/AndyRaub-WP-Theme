@@ -66,9 +66,7 @@ main.blogArchives {
         position: relative;
         margin: 10px auto;
         padding: 0;
-        border-bottom: 1px solid $color-5;
-        border-left: 1px solid $color-5;
-        border-right: 1px solid $color-5;
+        border: 1px solid $color-5;
         
         
         @media (min-width: 641px) {
@@ -141,10 +139,15 @@ main.blogArchives {
                 font-size: 1em;
                 cursor: pointer;
                 margin-left: 7px;
+                color: $color-3;
             }
             
             p {
                 margin-top: 0;
+                
+                &:hover  {
+                    color: $color-3;
+                }
             }
         }
         

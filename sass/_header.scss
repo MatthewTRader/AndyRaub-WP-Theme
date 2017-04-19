@@ -1,5 +1,5 @@
 header {
-    padding:10px 0;
+    padding:5px 0;
     overflow-x: hidden;
     
     #logo {
@@ -9,11 +9,11 @@ header {
         margin-top: 5px;
         
          @media (min-width: 640px) {
-             max-width: 300px;
+             max-width: 250px;
         }
         
          @media (min-width: 1200px) {
-             max-width: 350px;
+             max-width: 300px;
         }
     }
     
@@ -37,7 +37,7 @@ header {
         @media (min-width: 1200px) {
             float: right;
             text-align: right;
-            margin-top:55px;
+            margin-top:40px;
             width:auto;
             clear:initial;
         }

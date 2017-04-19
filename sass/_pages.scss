@@ -17,6 +17,12 @@ p {
 
 body:not(.home) main {
     
+    article {
+        img {
+            margin: 0 auto 20px;
+        }
+    }
+    
     background: #f3f3f3;
     padding: 50px 10px;
     
@@ -31,7 +37,7 @@ body:not(.home) main {
     
     aside { 
         
-        padding: 0 15px;
+        padding: 0 40px;
         
         .sidebar-widget {
             padding: 5px 0;
