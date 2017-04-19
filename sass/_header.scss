@@ -1,6 +1,5 @@
 header {
-    padding:5px 0;
-    overflow-x: hidden;
+    padding:5px 0 10px;
     
     #logo {
         max-width: 250px;
@@ -21,13 +20,14 @@ header {
         @media (max-width: 640px) {
             position: absolute;
             z-index: 100;
-            top: 90px;
+            top: 85px;
             right: -15px;
             height: 100vh;
             background: transparentize($color-4, .03);
             width: 80%;
             text-align: left;
             margin-right: -83%;
+            @include transition(all ease 0.3s);
         }
         
         width:100%;
@@ -95,6 +95,7 @@ header {
         
         &.mobileOn {
             margin-right: 0;
+            @include transition(all ease 0.3s);
         }
     }
     
@@ -190,6 +191,7 @@ header {
     
     &.mobileOn {
         overflow-x:visible;
+        @include transition(all ease 0.3s);
     } 
     
     .social-media {

@@ -110,6 +110,7 @@ main {
 
     &.mobileOn {
         position: fixed;
+        @include transition(all ease 0.3s);
     }
 }
 .column {
@@ -238,4 +239,14 @@ input:focus {
 .buttons {
     text-align: center;
     margin-top:30px;
+}
+
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+    color: $placeholder-color;
+}
+
+#wpadminbar {
+    @media (max-width: 640px) {
+        top: -46px;
+    }
 }

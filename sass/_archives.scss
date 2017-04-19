@@ -6,6 +6,11 @@
             text-align: left;
             font-weight: 500;
             font: $font-family-header;
+            color: $color-4;
+            
+            &:hover {
+                color: $color-4;
+            }
         }
         
         p {
@@ -97,6 +102,11 @@ main.blogArchives {
             text-align: left;
             font-weight: 500;
             font: $font-family-header;
+            color: $color-4;
+            
+            &:hover {
+                color: $color-4;
+            }
         }
         
         p {
@@ -104,6 +114,7 @@ main.blogArchives {
             text-align: left;
             font: $font-family;
             font-size: 1.6rem;
+            margin-top: 15px;
         }
         
         .readMore {
@@ -149,4 +160,10 @@ main.blogArchives {
         }
     }
     
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-title a {
+    font-weight: 500;
+    font: $font-family-header;
+    color: $color-4;
 }
