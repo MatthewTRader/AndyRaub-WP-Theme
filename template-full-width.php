@@ -1,10 +1,10 @@
-<?php /* Template Name: Right Sidebar Widgets 1 & 2 */ get_header(); ?>
+<?php /* Template Name: Full Width Page */ get_header(); ?>
 
 	<main role="main">
         
         <div class="container">
             <!-- section -->
-            <section class="medium-9 columns">
+            <section class="medium-12 columns">
 
 <!--
                 <h1>
@@ -42,8 +42,6 @@
 
             </section>
             <!-- /section -->
-            
-            <?php get_sidebar(); ?>
             
         </div>
         <div class="clear"></div>

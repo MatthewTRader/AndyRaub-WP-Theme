@@ -1,10 +1,19 @@
-<?php /* Template Name: Right Sidebar Widgets 1 & 2 */ get_header(); ?>
+<?php
+/**
+ * Unit Template Name: Full Width Course Page
+ *
+ * Be sure to use the "Unit Template Name:" in the header.
+ * To display the course unit content, be sure to inclue the loop.
+ */
+
+get_header(); ?>
+
 
 	<main role="main">
         
         <div class="container">
             <!-- section -->
-            <section class="medium-9 columns">
+            <section class="medium-12 columns">
 
 <!--
                 <h1>
@@ -42,8 +51,6 @@
 
             </section>
             <!-- /section -->
-            
-            <?php get_sidebar(); ?>
             
         </div>
         <div class="clear"></div>

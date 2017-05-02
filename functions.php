@@ -314,16 +314,35 @@ function example_customizer( $wp_customize ) {
     //Header Font Fields
     
     $wp_customize->add_setting(
-        'header_font_color',
+        'header-2_font_color',
         array(
             'default' => '#003056',
         )
     );
 
     $wp_customize->add_control(
+        'header-2_font_color',
+        array(
+            'label' => 'Main Headers Font Color (h1 & h2)',
+            'section' => 'font_settings',
+            'type' => 'text',
+        )
+    );
+    
+
+ //Sub Header Font Fields
+    
+    $wp_customize->add_setting(
         'header_font_color',
         array(
-            'label' => 'Header Font Color',
+            'default' => '#555',
+        )
+    );
+
+    $wp_customize->add_control(
+        'header_font_color',
+        array(
+            'label' => 'Sub Headers Font Color (h3, h4, h5, h6)',
             'section' => 'font_settings',
             'type' => 'text',
         )

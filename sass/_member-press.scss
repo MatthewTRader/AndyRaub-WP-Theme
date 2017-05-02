@@ -27,3 +27,31 @@
         }
     }
 }
+
+.buddypress #buddypress {
+    
+    .mp_wrapper textarea, .mp_wrapper select, .mp_wrapper input[type="text"], .mp_wrapper input[type="url"], .mp_wrapper input[type="email"], .mp_wrapper input[type="tel"], .mp_wrapper input[type="number"], .mp_wrapper input[type="password"] { 
+        padding: 2px 10px !important;
+        height: 45px !important;
+        font-size: 2rem !important;
+        
+        @include placeholder {
+            font-size: 2rem;
+            line-height: 2rem;
+            color: $placeholder-color;
+        }
+    }
+    
+    .mp-form-row label {
+       font-size: 1.4rem;
+    }
+    
+    li.current.selected {
+        background: #777;
+    }
+    
+    ul li a {
+        color: $color-4;
+    }
+    
+}

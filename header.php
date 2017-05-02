@@ -16,8 +16,12 @@
 
 	</head>
     <style>
-        h1, h2, h3, h4, h5, h6, main.blogArchives article h2 {
+        h3, h4, h5, h6 {
             color: <?php echo get_theme_mod( 'header_font_color' ); ?>;
+        }
+        
+        h1, h2, main.blogArchives article h2 {
+            color: <?php echo get_theme_mod( 'header-2_font_color' ); ?>;
         }
         
         p, ul li, ol li {

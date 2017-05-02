@@ -126,6 +126,14 @@
             </div>
         </section>
         
+        <?php if ($site_address = $cfs->get('show_bottom_content_box')) { ?>
+            <section id="bottom_content_box">
+                <div class="container">
+                    <?php echo CFS()->get( 'bottom_content_box' ); ?>
+                </div>
+             </section>
+        <?php } ?>
+        
 	</main>
 
 <?php get_footer(); ?>

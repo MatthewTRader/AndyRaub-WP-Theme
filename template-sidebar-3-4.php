@@ -1,7 +1,5 @@
 <?php /* Template Name: Right Sidebar Widgets 3 & 4 */ get_header(); ?>
 
-	<?php get_header(); ?>
-
 	<main role="main">
         
         <div class="container">
