@@ -1,35 +1,35 @@
 #articles article {
     
-        h2 {
-            font-size: 2rem;
-            line-height: 2.5rem;
-            text-align: left;
-            font-weight: 500;
-            font: $font-family-header;
+    h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: left;
+        font-weight: 500;
+        font: $font-family-header;
+        color: $color-4;
+
+        &:hover {
             color: $color-4;
-            
-            &:hover {
-                color: $color-4;
-            }
         }
-        
+    }
+
+    p {
+        @include transition(all ease 0.3s);
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
+    a.readMore {
+        display: initial;
+
         p {
-            @include transition(all ease 0.3s);
-            text-align: left;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
+            text-transform:lowercase;
+            font-weight: 600;
+            color: $color-4;
         }
-    
-        a.readMore {
-            display: initial;
-            
-            p {
-                font-size: 1.2rem;
-                text-transform:lowercase;
-                font-weight: 600;
-                color: $color-4;
-            }
-            
-        }
+
+    }
 }
 
 .pagination {

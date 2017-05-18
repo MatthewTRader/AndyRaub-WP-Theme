@@ -226,9 +226,9 @@ input:focus {
     max-width: initial !important;   
 }
 
-.button, .submit {
+.button, .submit, .mepr-submit {
     background: $color-3;
-    color: $color-2;
+    color: $color-2 !important;
     font-size: 1.3rem;
     text-transform: uppercase;
     border: none;
