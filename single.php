@@ -17,6 +17,8 @@
 			<!-- /post thumbnail -->
 
 			<?php the_content(); // Dynamic Content ?>
+			
+			<p><?php the_tags(); ?></p>
 
 			<?php comments_template(); ?>
 

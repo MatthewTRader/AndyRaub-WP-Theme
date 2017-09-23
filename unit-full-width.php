@@ -6,8 +6,7 @@
  * To display the course unit content, be sure to inclue the loop.
  */
 
-get_header(); ?>
-
+include 'header-course-unit.php'; ?>
 
 	<main role="main">
         
@@ -55,5 +54,5 @@ get_header(); ?>
         </div>
         <div class="clear"></div>
 	</main>
-
-<?php get_footer(); ?>
+	
+<?php wp_footer(); ?>
